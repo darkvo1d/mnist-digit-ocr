@@ -28,7 +28,7 @@ def predict():
 
     # Convert to OpenCV image
     img = preprocess(data_uri_to_cv2_img(imgstring))
-    cv2.imwrite('static/user_drawn/temp.png', img)
+    # cv2.imwrite('static/user_drawn/temp.png', img)
 
     data = (img / 255).reshape((1, 28, 28, 1))
 
