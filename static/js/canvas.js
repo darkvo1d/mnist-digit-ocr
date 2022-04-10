@@ -50,7 +50,7 @@ window.addEventListener('load', () => {
         let fd = new FormData(document.forms["hidden_form"]);
 
         let xhr = new XMLHttpRequest({mozSystem: true});
-        xhr.open('POST', 'http://127.0.0.1:5000/predict', true);
+        xhr.open('POST', '/predict', true);
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState == XMLHttpRequest.DONE) {

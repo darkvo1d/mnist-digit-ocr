@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Mar 05 11:45:03 2022
-
-@author: noopa
-"""
+import os
 import numpy as np
-import cv2
 from keras.models import load_model
 from flask import Flask, request, render_template
-from utils import preprocess, value_invert, data_uri_to_cv2_img
+from utils import preprocess, data_uri_to_cv2_img
 
 app = Flask(__name__)
 model = load_model("classifier.h5")
@@ -40,4 +35,5 @@ def predict():
 
 
 if __name__ == '__main__':
-    app.run()
+    port = int(os.environ.get('FLASK_RUN_PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
