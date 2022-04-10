@@ -5,7 +5,6 @@ Created on Sat Mar 05 11:45:03 2022
 @author: noopa
 """
 import numpy as np
-import cv2
 from keras.models import load_model
 from flask import Flask, request, render_template
 from utils import preprocess, value_invert, data_uri_to_cv2_img
