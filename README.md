@@ -2,6 +2,8 @@
 
 This is a web deployed project hosted on docker and Azure which allows users to draw a math digit ranging from 0-9 on a HTML canvas. The user drawn image is then processed and passed through an ML model to predict the digit it corresponds to.
 
+![image](https://user-images.githubusercontent.com/35334286/164505438-aa1be42d-787a-4d27-81bf-cf4d4a7fe20a.png)
+
 ## Problem Statement
 
 Many businesses still rely on paper forms that customers are requested to fill-up in order for them to be registered and be served. However, customer records are stored digitally which means that the businesses require staff members to transcribe the information recorded on these paper forms onto a computer. Aside from taking up valuable time that the staff members could have used to serve other customers, the manual transcription of this information is also prone to human errors. 
